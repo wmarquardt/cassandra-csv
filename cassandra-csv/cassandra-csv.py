@@ -5,7 +5,7 @@ import os
 import re
 import csv
 
-class cassandra2csv(object):
+class CassandraCsv(object):
 
     file_pool = 0
     filename = ""
@@ -82,4 +82,4 @@ class cassandra2csv(object):
 
 
 # create a class instance
-me = cassandra2csv()
+me = CassandraCsv()
