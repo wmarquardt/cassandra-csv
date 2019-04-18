@@ -7,7 +7,6 @@ import csv
 
 class CassandraCsv(object):
 
-    file_pool = 0
     filename = ""
     clean_filename = ""
     output_dir = ""
@@ -35,7 +34,7 @@ class CassandraCsv(object):
         me.clean_filename = filename
         if max_file_size:
             filename += """_%(partition)s"""
-
+        me.file_pool = 0 # set counter to 0 when call export
         me.max_file_size = max_file_size
         me.output_dir = output_dir
         me.filename = filename
