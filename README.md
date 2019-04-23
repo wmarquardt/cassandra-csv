@@ -4,7 +4,7 @@ Cassandra `COPY` function does not export data with **WHERE** condition. If you 
 
 ## Install
 ```shell
-    $ pip install cassandracsv
+    $ pip install cassandra-csv
 ```
 
 ## Usage
