@@ -4,18 +4,24 @@ Cassandra `COPY` function does not export data with **WHERE** clause. If you nee
 
 ## Install
 ```shell
-    $ pip install cassandra-csv
+$ pip install cassandra-csv
 ```
 
 ## Usage
 ```python
-     from cassandracsv import CassandraCsv
-	 result = cassandra_cluster.execute("SELECT foo FROM bar WHERE foobar=2")
-	
-	 CassandraCsv.export(
-		result,
-		[options]
-     )
+from cassandracsv import CassandraCsv
+from cassandra.cluster import Cluster
+
+__cluster = Cluster()
+cassandra_cluster = __cluster.connect('database')
+
+result = cassandra_cluster.execute("""SELECT foo FROM bar WHERE foobar=2""")
+
+
+CassandraCsv.export(
+    result,
+    [options]
+)
 ```
 
 ## Options
