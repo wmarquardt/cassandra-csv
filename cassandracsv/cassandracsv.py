@@ -72,7 +72,7 @@ class CassandraCsv(object):
         else:
             _file = os.path.join(_path,"%s.csv" % self.filename)
 
-        with open(_file, 'w') as csvFile:
+        with open(_file, 'w', newline='', encoding='utf-8') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(to_file)
 
