@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cassandra-csv',
-    version='0.2',
+    version='0.3',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='Export cassandra query result to CSV',
