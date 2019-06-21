@@ -27,7 +27,7 @@ CassandraCsv.export(
 ## Options
 |Name| Type | Default |  Description |
 |--|--|--|--|
-| **max_file_size** | int | 0 | max CSV file size (lines) the file will be splitted until complete entire resultset. Use 0 to create full a file |
+| **max_file_size** | int | 0 | max CSV file size (lines) the file will be splitted until complete entire resultset. Use 0 to export all result to just one file |
 | **output_dir** | string | /tmp | full output path
 | **filename** | string | export_file | file name (without extension)
 | **separator** | string | , | string separator
