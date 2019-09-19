@@ -9,8 +9,8 @@ $ pip install cassandra-csv
 
 ## Usage
 ```python
-from cassandracsv import CassandraCsv
 from cassandra.cluster import Cluster
+from cassandracsv import CassandraCsv
 
 __cluster = Cluster()
 cassandra_cluster = __cluster.connect('database')
