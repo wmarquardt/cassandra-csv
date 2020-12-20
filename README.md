@@ -12,8 +12,8 @@ $ pip install cassandra-csv
 from cassandra.cluster import Cluster
 from cassandracsv import CassandraCsv
 
-__cluster = Cluster()
-cassandra_cluster = __cluster.connect('database')
+cluster = Cluster()
+cassandra_cluster = cluster.connect('database')
 
 result = cassandra_cluster.execute("""SELECT foo FROM bar WHERE foobar=2""")
 
