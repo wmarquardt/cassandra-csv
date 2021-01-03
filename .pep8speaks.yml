@@ -1,0 +1,3 @@
+scanner:
+    diff_only: True  # If False, the entire file touched by the Pull Request is scanned for errors. If True, only the diff is scanned.
+    linter: pycodestyle  # Other option is flake8
