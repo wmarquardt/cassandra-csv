@@ -1,1 +1,13 @@
 language: python
+
+python:
+  - 3.5
+  - 3.6
+services:
+  - cassandra
+before_install:
+  - python --version
+  - pip install -r requirements.txt
+script: pytest # run tests
+after_success:
+  - codecov # submit coverage
