@@ -1,3 +1,5 @@
+[![code-style](https://img.shields.io/badge/codestyle-black-black)](https://github.com/psf/black)
+
 # Cassandra CSV
 Python package to export cassandra query result to CSV format.
 Cassandra `COPY` function does not export data with **WHERE** clause. If you need to export cassandra query result to CSV format, just read the documentation below.
